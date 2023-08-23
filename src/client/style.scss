@@ -1,0 +1,120 @@
+body {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+}
+
+#user {
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#title {
+    color: purple;
+}
+
+#room {
+    display: none;
+}
+
+#user.hidden {
+    display: none;
+}
+
+#room.active {
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+}
+
+#users {
+    background-color: #eee;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0.5rem 1rem;
+    flex-basis: 25%;
+    list-style: none;
+}
+
+#chat {
+    position: relative;
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
+    flex-basis: 75%;
+}
+
+#input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#input input {
+    width: 100%;
+    border-width: 1px 0;
+    border-radius: 0;
+    padding: 1rem;
+}
+
+#input button {
+    border: none;
+    border-radius: 0 0 1rem 0;
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+}
+
+#messages {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 1rem;
+}
+
+.message:last-child {
+    margin-bottom: 5rem;
+}
+
+.message {
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.message.server {
+    background-color: rgba(255,128,0,0.1);
+    border-color: rgba(255,128,0,0.2);
+}
+
+.user-nick {
+    font-weight: bold;
+    color: purple;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.user-nick.server {
+    color: rgb(255,128,0);
+}
+.user-msg {
+    color: #333
+}
+.user-msg.server {
+    font-style: italic;
+}
+
+#users li {
+    margin-bottom: 0.5rem;
+    color: purple;
+    font-weight: bold;
+}
+
+.nickname {
+    color: purple;
+    font-weight: bold;
+}
+
